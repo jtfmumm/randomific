@@ -1,0 +1,22 @@
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: com.jtfmumm#randomific_2.10;0.1.0[0m
+[0m[[0mdebug[0m] [0m	confs: [default][0m
+[0m[[0mdebug[0m] [0m	validate = true[0m
+[0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'default'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.jtfmumm#randomific_2.10;0.1.0 [default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jtfmumm#randomific_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [default->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.4 {default=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jtfmumm#randomific_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [default->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jtfmumm#randomific_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [default->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jtfmumm#randomific_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [default->master][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar.asc(jar)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 22ms :: artifacts dl 2ms[0m
+[0m[[0mdebug[0m] [0m	report for com.jtfmumm#randomific_2.10;0.1.0 default produced in /home/jtfmumm/Dropbox/Programming/scala/randomific/target/resolution-cache/reports/com.jtfmumm-randomific_2.10-default.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (22ms resolve - 2ms download)[0m

@@ -1,0 +1,16 @@
+publishSigned
+pgp-cmd gen-key
+set pgpReadOnly := false
+pgp-cmd gen-key
+publishSigned
+show */*:pgpSecretRing
+show */*:pgpPublicRing
+pgp-cmd send-key pubring.asc hkp://pool.sks-keyservers.net
+pgp-cmd send-key jtfmumm@gmail.com hkp://pool.sks-keyservers.net
+publishSigned
+check-pgp-signatures
+publishSigned
+exit
+publishSigned
+sonatypeRelease
+exit

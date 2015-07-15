@@ -1,0 +1,1 @@
+Index.PACKAGES = {"randomific" : [{"object" : "randomific\/Rand$.html", "name" : "randomific.Rand"}]};

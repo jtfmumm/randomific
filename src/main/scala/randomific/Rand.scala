@@ -37,4 +37,22 @@ object Rand {
     val pick = rollFromZero(s.size)
     s(pick)
   }
+
+  def kRandIntsBetween(k: Int, low: Int, high: Int): Seq[Int] = {
+    assert(k >= 0 && k <= (high - low))
+    def loop(n: Int, acc: Seq[Int]): Seq[Int] = n match {
+      case 0 => acc
+      case _ => {
+        val next: Seq[Int] = (randInt(low, high) +: acc).distinct
+        if (next.size > acc.size) loop(n - 1, next) else loop(n, acc)
+      }
+    }
+    loop(k, Seq[Int]())
+  }
+
+  def pickKItems[A](k: Int, s: Seq[A]): Seq[A] = {
+    assert(k >= 0 && k <= s.size)
+    val indices = kRandIntsBetween(k, 0, s.size - 1)
+    indices.map(i => s(i))
+  }
 }
