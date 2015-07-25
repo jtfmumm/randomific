@@ -9,14 +9,19 @@ Randomization utility functions.
  
   nRolls(n: Int, sides: Int): Int
  
-  rollFromZero(sides: Int): Int  // Returns an Int from 0 to (sides - 1)
+// Returns an Int from 0 to (sides - 1)
+  rollFromZero(sides: Int): Int  
  
-  flip(): Int // Returns 0 or 1
+// Returns 0 or 1
+  flip(): Int 
 
-  rolledByOdds(odds: Double): Boolean  // Takes a Double from 0 to 1.  Rolls against the odds.
+// Takes a Double from 0 to 1.  Rolls against the odds.
+  rolledByOdds(odds: Double): Boolean  
  
   pickItem[A](s: Seq[A]): A
  
-  kRandIntsBetween(k: Int, low: Int, high: Int): Seq[Int] // Returns k unique Ints from low and high
+// Returns k unique Ints from low and high
+  kRandIntsBetween(k: Int, low: Int, high: Int): Seq[Int] 
  
-  pickKItems[A](k: Int, s: Seq[A]): Seq[A] // Picks k unique items from s
+// Picks k unique items from s
+  pickKItems[A](k: Int, s: Seq[A]): Seq[A] 
